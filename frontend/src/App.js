@@ -4,6 +4,9 @@ import TaskEditModal from "./components/TaskEditModal";
 import Task from "./components/Task";
 import TabList from "./components/TabList";
 
+// моя приписка для адреса бэкенда
+// axios.defaults.baseURL = "http://158.160.212.106:8090"; 
+
 axios.interceptors.response.use(function (response) {
   if (response.headers['content-type'] !== 'application/json') {
     alert('unsupport data format in server response')
